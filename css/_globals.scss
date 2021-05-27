@@ -1,0 +1,76 @@
+// Primary colors
+$Pink: hsl(322, 100%, 66%);
+//Neutral colors
+$VeryPaleCyan: hsl(193, 100%, 96%);
+$VeryDarkCyan: hsl(192, 100%, 9%);
+$GrayishBlue: hsl(208, 11%, 55%);
+
+:root {
+    font-size: 18px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $VeryDarkCyan;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.container {
+    width: 375px;
+}
+
+// buttons
+
+.btn {
+    display: inline-block;
+    font-size: .65rem;
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+    font-weight: 700;
+
+    &__nav {
+        background-color: white;
+        padding: 0.22rem  1.275rem;
+        margin: 0;
+    }
+
+    &__main {
+        width: 14rem;
+        padding: 0.75rem 2.5rem;
+        font-size: .75rem;
+        color: white;
+        background-color: $Pink;
+        margin: 0 auto;
+
+        &__footer {
+            font-size: .65rem;
+            width: 12rem;
+        }
+    }
+
+    &:hover {
+        opacity: .7;
+        cursor: pointer;
+    }
+}   

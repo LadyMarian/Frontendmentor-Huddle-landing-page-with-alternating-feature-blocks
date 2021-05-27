@@ -1,0 +1,100 @@
+.card__footer {
+    margin: -5rem -.25rem 3rem -.25rem;
+    text-align: center;
+    padding: 2.25rem 1rem;
+}
+
+.footer {
+    background-color: $VeryDarkCyan;
+    color: white;
+    margin-top: 10rem;
+    text-align: left;
+    padding: 0 1rem 1rem 1rem;
+    
+    &__main {
+        
+        &__logo {
+            height: 1.5rem;
+        }
+
+        &__details {
+            margin: 1.5rem 0;
+            display: grid;
+            grid-gap: 1rem;
+
+            &__icon {
+                grid-column: 1;
+            }
+
+            &__text {
+                grid-column: 2;
+                margin: 0;
+            }
+        }
+    }
+
+    &__links {
+        margin: 1.5rem 0 0 0;
+        
+        &__section {
+
+            &__item {
+                color: white;
+                text-decoration:none;
+                margin-bottom: 1.125rem;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__socials {
+        margin: 1.75rem 0 0  0;
+
+        &__links {
+            justify-content: center;
+        }
+
+        &__icon {
+            
+            padding: .4rem;
+            border: 1px solid white;
+            border-radius: 50%;
+
+            &__insta {
+                padding: .4rem .434722rem
+            }
+
+            &+.footer__socials__icon {
+                margin-left: 1rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+                color: $Pink;
+                border-color: $Pink;
+            }
+        }
+
+        &__copyright {
+            font-size: .7rem;
+            opacity: .8;
+            text-align: center;
+            margin: 2rem 0;
+        }
+    }
+}
+
+// Attribution 
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
